@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Minha página</title>
+        <meta charset="utf-8">   
+        <script type="text/javascript" src="js/main.js"></script>                                                                                              
+    </head>
+    <body onload="load()"> <!--quando carregar o body será chamada a função load-->
+        <button type="button" onclick="clicou()">Clique aqui </button> 
+        <p id="agradecimento" onclick="redirecionar()"></p>
+        <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o Mouse aqui</p>
+        <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o Mouse aqui</p>
+        <!--
+            onmouseover = "trocar(this)" | quando passar o mause em cima, ative a função tocar (this = eu mesmo de parametro)
+            onmouseout= "voltar(this)" | quando tirar o mouse, ative a função voltar (this = eu mesmo de parametro)
+        -->
+
+        <select onchange="funcaoChange(this)"> <!--charge = -->
+            <option value="1">valor 1 </option>
+            <option value="2">valor 2 </option>
+            <option value="3">valor 3 </option>
+        </select>
+        
+    </body>
+</html>
